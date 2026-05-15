@@ -1,0 +1,124 @@
+/* =========================
+   RESET GLOBAL
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+    background-color: #39A900;
+    padding: 15px 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+.container{
+    padding: 40px 20px;
+}
+
+.intro{
+    text-align: center;
+}
+
+.intro h2{
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.intro p{
+    margin-bottom: 20px;
+}
+
+/* =========================
+   BOTÓN
+========================= */
+
+.btn{
+    background-color: #39A900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* =========================
+   MOBILE FIRST
+========================= */
+
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links{
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .nav-links a{
+        font-size: 0.9rem;
+    }
+}
