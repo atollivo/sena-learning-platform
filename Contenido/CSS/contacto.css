@@ -1,0 +1,137 @@
+/* =========================
+   HEADER
+========================= */
+.contact-header{
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.contact-header h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact-header p{
+    color: var(--color-gray);
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact-section{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+}
+
+/* =========================
+   FORM
+========================= */
+.contact-form{
+    background-color: var(--color-white);
+
+    padding: 30px;
+
+    border-radius: var(--radius);
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* LABEL */
+.contact-form label{
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-weight: bold;
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-family: var(--font-main);
+
+    outline: none;
+}
+
+/* TEXTAREA */
+.contact-form textarea{
+    resize: none;
+
+    min-height: 120px;
+}
+
+/* FOCUS */
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: var(--color-primary);
+}
+
+/* =========================
+   INFO
+========================= */
+.contact-info{
+    display: grid;
+
+    gap: 20px;
+}
+
+/* CARD */
+.info-card{
+    background-color: var(--color-white);
+
+    padding: 25px;
+
+    border-radius: var(--radius);
+
+    text-align: center;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.info-card:hover{
+    transform: translateY(-5px);
+}
+
+/* ICON */
+.info-card i{
+    font-size: 2rem;
+
+    color: var(--color-primary);
+
+    margin-bottom: 15px;
+}
+
+/* TITULO */
+.info-card h3{
+    margin-bottom: 10px;
+}
+
+/* TEXTO */
+.info-card p{
+    color: var(--color-gray);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(min-width:768px){
+
+    .contact-section{
+        grid-template-columns: 2fr 1fr;
+    }
+}
