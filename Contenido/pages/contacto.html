@@ -1,128 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
     <title>Contacto | SENA APP</title>
 
-    <link rel="stylesheet" href="../CSS/styles_global.css">
-    <link rel="stylesheet" href="../CSS/contacto.css">
+    <!-- CSS -->
+    <link rel="stylesheet"
+    href="../CSS/styles_global.css">
+
+    <link rel="stylesheet"
+    href="../CSS/contacto.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
 
-<header class="header">
-
-    <nav class="navbar">
-
-        <h1 class="logo">SENA</h1>
-
-        <ul class="nav-links">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="tareas.html">Tareas</a></li>
-            <li><a href="progreso.html">Progreso</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-
-    </nav>
-
-</header>
-
-<main class="container">
-
     <!-- HEADER -->
-    <section class="contact-header">
+    <header class="header">
 
-        <h2>Centro de Contacto</h2>
+        <nav class="navbar">
+
+            <h1 class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                SENA APP
+            </h1>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="../index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tareas.html">
+                        Tareas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="progreso.html">
+                        Progreso
+                    </a>
+                </li>
+
+                <li>
+                    <a class="active" href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="container">
+
+        <!-- TITULO -->
+        <section class="contact-header">
+
+            <h2>
+                Contáctanos
+            </h2>
+
+            <p>
+                Si tienes dudas o problemas
+                puedes comunicarte con soporte.
+            </p>
+
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contact-section">
+
+            <!-- FORMULARIO -->
+            <form class="contact-form">
+
+                <label>
+                    Nombre
+                </label>
+
+                <input
+                type="text"
+                placeholder="Ingresa tu nombre">
+
+                <label>
+                    Correo
+                </label>
+
+                <input
+                type="email"
+                placeholder="Ingresa tu correo">
+
+                <label>
+                    Mensaje
+                </label>
+
+                <textarea
+                placeholder="Escribe tu mensaje"></textarea>
+
+                <button class="btn">
+                    Enviar
+                </button>
+
+            </form>
+
+            <!-- INFORMACIÓN -->
+            <div class="contact-info">
+
+                <div class="info-card">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <h3>
+                        Correo
+                    </h3>
+
+                    <p>
+                        soporte@senaapp.com
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <h3>
+                        Teléfono
+                    </h3>
+
+                    <p>
+                        +57 300 000 0000
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <h3>
+                        Horario
+                    </h3>
+
+                    <p>
+                        Lunes a Viernes
+                        8:00 AM - 6:00 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
 
         <p>
-            Estamos disponibles para ayudarte con dudas,
-            soporte académico o información relacionada
-            con la plataforma.
+            © 2026 SENA APP
         </p>
 
-    </section>
-
-    <!-- CARDS -->
-    <section class="contact-cards">
-
-        <article class="contact-card">
-
-            <h3>Correo Electrónico</h3>
-
-            <p>
-                soporte@senaapp.com
-            </p>
-
-        </article>
-
-        <article class="contact-card">
-
-            <h3>Horario de Atención</h3>
-
-            <p>
-                Lunes a Viernes<br>
-                8:00 AM - 6:00 PM
-            </p>
-
-        </article>
-
-        <article class="contact-card">
-
-            <h3>Soporte Técnico</h3>
-
-            <p>
-                Atención para problemas técnicos
-                y ayuda en el sistema.
-            </p>
-
-        </article>
-
-    </section>
-
-    <!-- FORMULARIO -->
-    <section class="contact-content">
-
-        <form class="contact-form">
-
-            <h2>Enviar Mensaje</h2>
-
-            <input type="text" placeholder="Nombre completo">
-
-            <input type="email" placeholder="Correo electrónico">
-
-            <input type="text" placeholder="Asunto">
-
-            <textarea placeholder="Escribe tu mensaje"></textarea>
-
-            <button class="btn">
-                Enviar Mensaje
-            </button>
-
-        </form>
-
-    </section>
-
-    <!-- INFO -->
-    <section class="contact-info">
-
-        <h2>Atención al Aprendiz</h2>
-
-        <p>
-            Nuestro objetivo es brindar una experiencia
-            accesible, organizada y eficiente para todos
-            los aprendices del sistema SENA.
-        </p>
-
-    </section>
-
-</main>
-
-<footer class="footer">
-
-    <p>© 2026 SENA APP</p>
-
-</footer>
+    </footer>
 
 </body>
+
 </html>

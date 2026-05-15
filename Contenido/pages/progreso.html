@@ -1,150 +1,243 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
     <title>Progreso | SENA APP</title>
 
-    <link rel="stylesheet" href="../CSS/styles_global.css">
-    <link rel="stylesheet" href="../CSS/progreso.css">
+    <!-- CSS -->
+    <link rel="stylesheet"
+    href="../CSS/styles_global.css">
+
+    <link rel="stylesheet"
+    href="../CSS/progreso.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
 
-<header class="header">
+    <!-- HEADER -->
+    <header class="header">
 
-    <nav class="navbar">
+        <nav class="navbar">
 
-        <h1 class="logo">SENA</h1>
+            <h1 class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                SENA APP
+            </h1>
 
-        <ul class="nav-links">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="tareas.html">Tareas</a></li>
-            <li><a href="progreso.html">Progreso</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+            <ul class="nav-links">
 
-    </nav>
+                <li>
+                    <a href="../index.html">
+                        Inicio
+                    </a>
+                </li>
 
-</header>
+                <li>
+                    <a href="tareas.html">
+                        Tareas
+                    </a>
+                </li>
 
-<main class="container">
+                <li>
+                    <a class="active" href="progreso.html">
+                        Progreso
+                    </a>
+                </li>
 
-    <!-- ENCABEZADO -->
-    <section class="progress-header">
+                <li>
+                    <a href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
 
-        <h2>Seguimiento del Aprendiz</h2>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="container">
+
+        <!-- TITULO -->
+        <section class="progress-header">
+
+            <h2>
+                Progreso Académico
+            </h2>
+
+            <p>
+                Consulta el avance de las
+                competencias y actividades.
+            </p>
+
+        </section>
+
+        <!-- PROGRESO -->
+        <section class="progress-section">
+
+            <!-- ITEM -->
+            <div class="progress-card">
+
+                <div class="progress-info">
+
+                    <span>
+                        HTML
+                    </span>
+
+                    <span>
+                        90%
+                    </span>
+
+                </div>
+
+                <div class="bar">
+
+                    <div class="fill html"></div>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="progress-card">
+
+                <div class="progress-info">
+
+                    <span>
+                        CSS
+                    </span>
+
+                    <span>
+                        80%
+                    </span>
+
+                </div>
+
+                <div class="bar">
+
+                    <div class="fill css"></div>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="progress-card">
+
+                <div class="progress-info">
+
+                    <span>
+                        GitHub
+                    </span>
+
+                    <span>
+                        70%
+                    </span>
+
+                </div>
+
+                <div class="bar">
+
+                    <div class="fill github"></div>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="progress-card">
+
+                <div class="progress-info">
+
+                    <span>
+                        Responsive Design
+                    </span>
+
+                    <span>
+                        75%
+                    </span>
+
+                </div>
+
+                <div class="bar">
+
+                    <div class="fill responsive"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RESUMEN -->
+        <section class="summary">
+
+            <div class="summary-card">
+
+                <i class="fa-solid fa-check"></i>
+
+                <h3>
+                    12
+                </h3>
+
+                <p>
+                    Tareas completadas
+                </p>
+
+            </div>
+
+            <div class="summary-card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>
+                    3
+                </h3>
+
+                <p>
+                    Pendientes
+                </p>
+
+            </div>
+
+            <div class="summary-card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>
+                    80%
+                </h3>
+
+                <p>
+                    Rendimiento
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
 
         <p>
-            Consulta el avance de tus actividades y competencias
-            dentro del proceso formativo SENA.
+            © 2026 SENA APP
         </p>
 
-    </section>
-
-    <!-- RESUMEN -->
-    <section class="summary-cards">
-
-        <article class="summary-card">
-
-            <h3>12</h3>
-            <p>Tareas completadas</p>
-
-        </article>
-
-        <article class="summary-card">
-
-            <h3>3</h3>
-            <p>Actividades pendientes</p>
-
-        </article>
-
-        <article class="summary-card">
-
-            <h3>80%</h3>
-            <p>Progreso general</p>
-
-        </article>
-
-    </section>
-
-    <!-- BARRAS -->
-    <section class="progress-content">
-
-        <div class="progress-item">
-
-            <div class="progress-info">
-                <span>HTML</span>
-                <span>90%</span>
-            </div>
-
-            <div class="bar">
-                <div class="fill html"></div>
-            </div>
-
-        </div>
-
-        <div class="progress-item">
-
-            <div class="progress-info">
-                <span>CSS</span>
-                <span>80%</span>
-            </div>
-
-            <div class="bar">
-                <div class="fill css"></div>
-            </div>
-
-        </div>
-
-        <div class="progress-item">
-
-            <div class="progress-info">
-                <span>Git y GitHub</span>
-                <span>70%</span>
-            </div>
-
-            <div class="bar">
-                <div class="fill git"></div>
-            </div>
-
-        </div>
-
-        <div class="progress-item">
-
-            <div class="progress-info">
-                <span>Responsive Design</span>
-                <span>75%</span>
-            </div>
-
-            <div class="bar">
-                <div class="fill responsive"></div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- INFORMACIÓN -->
-    <section class="progress-details">
-
-        <h2>Estado Académico</h2>
-
-        <p>
-            El aprendiz mantiene un buen rendimiento en el desarrollo
-            del proyecto, demostrando avances sólidos en HTML, CSS
-            y control de versiones con Git y GitHub.
-        </p>
-
-    </section>
-
-</main>
-
-<footer class="footer">
-
-    <p>© 2026 SENA APP</p>
-
-</footer>
+    </footer>
 
 </body>
 </html>
