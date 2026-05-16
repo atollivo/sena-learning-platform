@@ -91,23 +91,6 @@ Mantenemos una organización modular para facilitar el mantenimiento:
 
 ```
 /
-├── .github/              # Motor de plantillas (Issues y Pull Requests)
-├── docs/                 # Guías metodológicas y reportes técnicos
-├── public/               # Recursos estáticos (imágenes, iconos)
-├── src/                  # Código fuente principal
-│   ├── assets/           # Estilos globales y multimedia
-│   ├── components/       # Piezas de interfaz reutilizables (UI)
-│   ├── services/         # Lógica de consumo de datos o APIs
-│   ├── views/            # Secciones o páginas principales
-│   └── main.js           # Punto de entrada de la aplicación
-├── .gitignore            # Archivos que Git debe ignorar
-├── package.json          # Dependencias y scripts del proyecto
-├── README.md             # Manual principal del repositorio
-└── TEAM_AGREEMENT.md     # Acuerdo y normas de convivencia del equipo
-```
-
-```
-/
 ├── .github/             
 ├    └── ISSUE_TEMPLATE/
 ├       ├  ├── bug_report.md
