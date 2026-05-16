@@ -2,219 +2,144 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Tareas | SENA APP</title>
 
-    <link rel="stylesheet"
-    href="../CSS/styles_global.css">
-
-    <link rel="stylesheet"
-    href="../CSS/tareas.css">
-
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/styles_global.css">
+    <link rel="stylesheet" href="../CSS/tareas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
 <body>
 
-    <header class="header">
+<header class="header">
 
-        <nav class="navbar">
+    <nav class="navbar">
 
-            <h1 class="logo">
-                <i class="fa-solid fa-graduation-cap"></i>
-                SENA APP
-            </h1>
+        <h1 class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            SENA APP
+        </h1>
 
-            <ul class="nav-links">
+        <ul class="nav-links">
 
-                <li>
-                    <a href="../index.html">
-                        Inicio
-                    </a>
-                </li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a class="active" href="tareas.html">Tareas</a></li>
+            <li><a href="progreso.html">Progreso</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
 
-                <li>
-                    <a class="active" href="tareas.html">
-                        Tareas
-                    </a>
-                </li>
+        </ul>
 
-                <li>
-                    <a href="progreso.html">
-                        Progreso
-                    </a>
-                </li>
+    </nav>
 
-                <li>
-                    <a href="contacto.html">
-                        Contacto
-                    </a>
-                </li>
+</header>
 
-            </ul>
+<main class="container">
 
-        </nav>
+    <!-- HEADER -->
+    <section class="tasks-header">
 
-    </header>
+        <h2>Gestión de Tareas</h2>
 
-    <!-- CONTENIDO -->
-    <main class="container">
-
-        <!-- TITULO -->
-        <section class="tasks-header">
-
-            <h2>
-                Gestión de Tareas
-            </h2>
-
-            <p>
-                Consulta actividades pendientes
-                y organiza mejor tu proceso académico.
-            </p>
-
-        </section>
-
-        <!-- 🟢 ISSUE 1: FORMULARIO DE CREACIÓN DE TAREAS -->
-        <section class="task-form-section">
-
-            <h2>Crear nueva tarea</h2>
-
-            <form class="task-form">
-
-                <label>Nombre de la tarea</label>
-                <input 
-                    type="text"
-                    placeholder="Ej: Maquetación HTML"
-                    required
-                    maxlength="50">
-
-                <label>Descripción</label>
-                <textarea
-                    placeholder="Describe la tarea"
-                    required
-                    maxlength="150"></textarea>
-
-                <label>Estado</label>
-                <select required>
-
-                    <option value="">
-                        Selecciona un estado
-                    </option>
-
-                    <option value="pending">
-                        Pendiente
-                    </option>
-
-                    <option value="progress">
-                        En proceso
-                    </option>
-
-                    <option value="completed">
-                        Completada
-                    </option>
-
-                </select>
-
-                <button class="btn" type="submit">
-                    Crear tarea
-                </button>
-
-            </form>
-
-        </section>
-
-        <!-- TAREAS (YA EXISTENTE - ISSUE 2 DESPUÉS) -->
-        <section class="tasks">
-
-            <article class="task-card">
-
-                <i class="fa-solid fa-code"></i>
-
-                <h3>
-                    Maquetación HTML
-                </h3>
-
-                <p>
-                    Completar la estructura
-                    principal del proyecto.
-                </p>
-
-                <span class="status completed">
-                    Completada
-                </span>
-
-            </article>
-
-            <article class="task-card">
-
-                <i class="fa-solid fa-mobile-screen"></i>
-
-                <h3>
-                    Responsive Design
-                </h3>
-
-                <p>
-                    Adaptar la página
-                    para dispositivos móviles.
-                </p>
-
-                <span class="status progress">
-                    En proceso
-                </span>
-
-            </article>
-
-            <article class="task-card">
-
-                <i class="fa-brands fa-github"></i>
-
-                <h3>
-                    GitHub
-                </h3>
-
-                <p>
-                    Realizar pull request
-                    y organizar ramas.
-                </p>
-
-                <span class="status pending">
-                    Pendiente
-                </span>
-
-            </article>
-
-            <article class="task-card">
-
-                <i class="fa-solid fa-palette"></i>
-
-                <h3>
-                    Mejoras Visuales
-                </h3>
-
-                <p>
-                    Aplicar estilos CSS
-                    para mejorar la interfaz.
-                </p>
-
-                <span class="status progress">
-                    En proceso
-                </span>
-
-            </article>
-
-        </section>
-
-    </main>
-
-    <footer class="footer">
         <p>
-            © 2026 SENA APP
+            Consulta actividades pendientes y organiza mejor tu proceso académico.
         </p>
-    </footer>
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="task-form-section">
+
+        <h2>Crear nueva tarea</h2>
+
+        <form class="task-form">
+
+            <label>Nombre de la tarea</label>
+            <input type="text" placeholder="Ej: Maquetación HTML" required maxlength="50">
+
+            <label>Descripción</label>
+            <textarea placeholder="Describe la tarea" required maxlength="150"></textarea>
+
+            <label>Estado</label>
+            <select required>
+
+                <option value="">Selecciona un estado</option>
+                <option value="pending">Pendiente</option>
+                <option value="progress">En proceso</option>
+                <option value="completed">Completada</option>
+
+            </select>
+
+            <button class="btn" type="submit">Crear tarea</button>
+
+        </form>
+
+    </section>
+
+    <!-- TAREAS -->
+    <section class="tasks">
+
+        <article class="task-card">
+
+            <i class="fa-solid fa-code"></i>
+            <h3>Maquetación HTML</h3>
+            <p>Completar la estructura principal del proyecto.</p>
+
+            <div class="task-actions">
+                <span class="status completed">Completada</span>
+                <button class="delete-btn">Eliminar</button>
+            </div>
+
+        </article>
+
+        <article class="task-card">
+
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>Responsive Design</h3>
+            <p>Adaptar la página para dispositivos móviles.</p>
+
+            <div class="task-actions">
+                <span class="status progress">En proceso</span>
+                <button class="delete-btn">Eliminar</button>
+            </div>
+
+        </article>
+
+        <article class="task-card">
+
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+            <p>Realizar pull request y organizar ramas.</p>
+
+            <div class="task-actions">
+                <span class="status pending">Pendiente</span>
+                <button class="delete-btn">Eliminar</button>
+            </div>
+
+        </article>
+
+        <article class="task-card">
+
+            <i class="fa-solid fa-palette"></i>
+            <h3>Mejoras Visuales</h3>
+            <p>Aplicar estilos CSS para mejorar la interfaz.</p>
+
+            <div class="task-actions">
+                <span class="status progress">En proceso</span>
+                <button class="delete-btn">Eliminar</button>
+            </div>
+
+        </article>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 SENA APP</p>
+</footer>
 
 </body>
 </html>
