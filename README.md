@@ -106,6 +106,42 @@ Mantenemos una organización modular para facilitar el mantenimiento:
 └── TEAM_AGREEMENT.md     # Acuerdo y normas de convivencia del equipo
 ```
 
+```
+/
+├── .github/             
+├    └── ISSUE_TEMPLATE/
+├       ├  ├── bug_report.md
+├       ├  └── feature_request.md
+├       └── pull_request_template.md
+├── Contenido/
+├    └── CSS
+├    ├    ├── contactos.css
+├    ├    ├── progreso.css
+├    ├    ├── styles_global.css
+├    ├    └── tarea.css
+├    ├
+├    └──────── pages
+├    ├            ├── contactos.html
+├    ├            ├── progreso.html
+├    ├            └── tarea.html
+├    └── index.html
+├
+├── docs/
+│   ├── 01-guia-sistema/
+│   │   ├── blindaje-ramas.md
+│   │   ├── creacion_milestones.md
+│   │   ├── creacion_issues.md
+│   │   └── tablero-kanban.md
+│   └──-guia-metodologia/
+│       ├── conventional-commits.md
+│       ├── gitflow.md
+│       ├── GUIA_ISSUES.md
+│       └── GUIA_PULL_REQUEST.md
+│       └── ISSUE_TEMPLATE/
+├
+├── README.md
+├── TEAM_AGREEMENT.md
+
 ## METODOLOGÍA DE TRABAJO (GITFLOW PROFESIONAL)
 
 El flujo de trabajo es el corazón de nuestra colaboración.  
