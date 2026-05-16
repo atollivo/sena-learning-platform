@@ -1,46 +1,31 @@
-/* =========================
-   HEADER
-========================= */
 .tasks-header{
     text-align: center;
-
     margin-bottom: 40px;
 }
 
 .tasks-header h2{
     font-size: 2rem;
-
     margin-bottom: 15px;
 }
 
 .tasks-header p{
     color: var(--color-gray);
+
 }
 
-/* =========================
-   TASKS
-========================= */
 .tasks{
     display: grid;
     grid-template-columns: 1fr;
-
     gap: 20px;
 }
 
-/* =========================
-   CARD
-========================= */
+/*card*/
 .task-card{
     background-color: var(--color-white);
-
     padding: 30px;
-
     border-radius: var(--radius);
-
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-
     transition: 0.3s;
-
     text-align: center;
 }
 
@@ -48,9 +33,7 @@
     transform: translateY(-5px);
 }
 
-/* =========================
-   ICONO
-========================= */
+/*ICONO*/
 .task-card i{
     font-size: 2rem;
 
@@ -59,34 +42,23 @@
     margin-bottom: 15px;
 }
 
-/* =========================
-   TITULO
-========================= */
+/*TITULO*/
 .task-card h3{
     margin-bottom: 15px;
 }
 
-/* =========================
-   TEXTO
-========================= */
+/*TEXTO*/
 .task-card p{
     color: var(--color-gray);
-
     margin-bottom: 20px;
 }
 
-/* =========================
-   STATUS
-========================= */
+/*STATUS*/
 .status{
     display: inline-block;
-
     padding: 8px 15px;
-
     border-radius: 5px;
-
     font-size: 0.9rem;
-
     font-weight: bold;
 }
 
@@ -108,9 +80,7 @@
     color: #721c24;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/*RESPONSIVE*/
 @media(min-width:768px){
 
     .tasks{
@@ -123,4 +93,54 @@
     .tasks{
         grid-template-columns: repeat(4,1fr);
     }
+}
+
+/* FORMULARIO TAREAS (ISSUE 1) */
+.task-form-section{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.task-form-section h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.task-form{
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.task-form label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-main);
+    outline: none;
+}
+
+.task-form textarea{
+    resize: none;
+    min-height: 100px;
+}
+
+.task-form input:focus,
+.task-form textarea:focus,
+.task-form select:focus{
+    border-color: var(--color-primary);
 }
