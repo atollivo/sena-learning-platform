@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
 
     <title>Tareas | SENA APP</title>
 
-    <!-- CSS -->
     <link rel="stylesheet"
     href="../CSS/styles_global.css">
 
     <link rel="stylesheet"
     href="../CSS/tareas.css">
 
-    <!-- ICONOS -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -25,7 +20,6 @@
 
 <body>
 
-    <!-- HEADER -->
     <header class="header">
 
         <nav class="navbar">
@@ -84,10 +78,58 @@
 
         </section>
 
-        <!-- TAREAS -->
+        <!-- 🟢 ISSUE 1: FORMULARIO DE CREACIÓN DE TAREAS -->
+        <section class="task-form-section">
+
+            <h2>Crear nueva tarea</h2>
+
+            <form class="task-form">
+
+                <label>Nombre de la tarea</label>
+                <input 
+                    type="text"
+                    placeholder="Ej: Maquetación HTML"
+                    required
+                    maxlength="50">
+
+                <label>Descripción</label>
+                <textarea
+                    placeholder="Describe la tarea"
+                    required
+                    maxlength="150"></textarea>
+
+                <label>Estado</label>
+                <select required>
+
+                    <option value="">
+                        Selecciona un estado
+                    </option>
+
+                    <option value="pending">
+                        Pendiente
+                    </option>
+
+                    <option value="progress">
+                        En proceso
+                    </option>
+
+                    <option value="completed">
+                        Completada
+                    </option>
+
+                </select>
+
+                <button class="btn" type="submit">
+                    Crear tarea
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- TAREAS (YA EXISTENTE - ISSUE 2 DESPUÉS) -->
         <section class="tasks">
 
-            <!-- CARD -->
             <article class="task-card">
 
                 <i class="fa-solid fa-code"></i>
@@ -107,7 +149,6 @@
 
             </article>
 
-            <!-- CARD -->
             <article class="task-card">
 
                 <i class="fa-solid fa-mobile-screen"></i>
@@ -127,7 +168,6 @@
 
             </article>
 
-            <!-- CARD -->
             <article class="task-card">
 
                 <i class="fa-brands fa-github"></i>
@@ -147,7 +187,6 @@
 
             </article>
 
-            <!-- CARD -->
             <article class="task-card">
 
                 <i class="fa-solid fa-palette"></i>
@@ -171,15 +210,11 @@
 
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
-
         <p>
             © 2026 SENA APP
         </p>
-
     </footer>
 
 </body>
-
 </html>
